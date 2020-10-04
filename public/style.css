@@ -38,21 +38,22 @@ header h1 {
 
 header h2 {
     margin-top: 15px;
-    font-size: min(25px, 3.5vw);
+    font-size: min(26px, 3.5vw);
 }
 
 header p {
     margin-top: 5px;
-    font-size: min(25px, 3vw);
+    font-size: min(24px, 3vw);
 }
 
 a.link-github {
-    font-size: max(1.2vw, 18px);
+    font-size: max(1.1vw, 19px);
     text-align: center;
 }
 
 svg {
-    height: 1.3vw;
+    margin-top: 1%;
+    height: max(1.1vw, 15px);
     fill: #fff;
 }
 
