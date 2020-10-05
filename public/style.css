@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #4e89ae;
+}
+
 .skip-link {
     display: none;
 } 
@@ -76,10 +81,6 @@ svg {
     }
 }
 
-main, nav {
-    background-color: #4e89ae;
-}
-
 nav {
     padding: 3rem;
 }
@@ -112,13 +113,6 @@ main {
     padding-top: 3vh;
     padding-bottom: 5vh;
     font-size: 1.18rem;
-}
-
-article .container {
-    width: 100%;
-    max-width: 80vh;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 #main h2 {
@@ -179,7 +173,7 @@ blockquote {
     display: inline-grid;
     padding: 0.5rem;
     font-size: 1.3rem;
-    /* color: #ffa372; */
+    color: #ffa372;
 }
 
 #about section:nth-child(2) p:nth-child(3) {
@@ -254,4 +248,103 @@ ol {
     border: 3px solid #fff;
     color: #fff;
     padding: 15px;
+}
+
+.profile {
+    /* width: 95vw; */
+    max-width: 80ch;
+    margin: 1rem auto 10vh;
+    padding: 1.25rem;
+    z-index: 1;
+
+}
+
+aside {
+    display: block;
+}
+
+.profile .container {
+    background: #ffa372;
+    color: #fff;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    grid-gap: 1rem;
+}
+
+.profile h4 {
+    margin: 5px;
+    text-align: center;
+}
+
+.profile ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 3px;
+    list-style: none;
+}
+
+#styles {
+    margin: 5vh 0 20vh;
+    text-align: center;
+}
+
+article .container, .page-footer .container, #styles .container {
+    width: 100%;
+    max-width: 80ch;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#styles h2 {
+    color: #ed6663;
+    font-size: 1.5rem;
+}
+
+.features {
+    position: relative;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+}
+
+.page-footer ul, .features {
+    display: grid;
+    margin: 0 0 2rem;
+    padding: 0;
+    grid-gap: 1em;
+    list-style: none;
+}
+
+#styles .features li, .features.patterned li {
+    background-color: #ed6663;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.features li {
+    display: grid;
+    position: relative;
+    place-content: center;
+    min-height: 12rem;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.features li > span {
+    display: grid;
+    place-content: center;
+    padding: 0.5em;
+    grid-gap: 0.5rem;
+    border: 1px solid #fff;
+    background-color: #ed6663;
+    line-height: 1.1;
+}
+
+.link-allstyles {
+    padding: 10px;
+    background: #ffa372;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #ffa372;
 }
