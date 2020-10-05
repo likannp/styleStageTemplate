@@ -14,6 +14,10 @@ a:link {
     text-decoration: none;
 } 
 
+li {
+    list-style-type: none;
+}
+
 header {
     display: grid;
     min-height: 100vh;
@@ -94,7 +98,6 @@ nav ul {
 }
 
 nav ul li {
-    list-style-type: none;
     margin: 1rem;
 }
 
@@ -104,3 +107,45 @@ nav ul a {
     font-size: 1.6rem;
     text-decoration: none;
 }
+
+main {
+    display: block;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+}
+
+article .container {
+    width: 100%;
+    max-width: 80vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#main h2 {
+    align-self: center;
+    text-align: center;
+    line-height: 2;
+    margin: 0.70rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: cursor 500ms steps(40) infinite normal, disappearText 6s steps(40) 1s infinite normal both;
+}
+
+@keyframes disappearText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30em;
+    }
+}
+
+@keyframes cursor{
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
