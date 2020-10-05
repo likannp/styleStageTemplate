@@ -10,12 +10,9 @@
 a {
      color: inherit; 
 }
-a:link {
-    text-decoration: none;
-} 
 
-li {
-    list-style-type: none;
+p {
+    margin: 0 0 1rem;
 }
 
 header {
@@ -46,11 +43,11 @@ header h2 {
 }
 
 header p {
-    margin-top: 5px;
     font-size: min(24px, 3vw);
 }
 
 a.link-github {
+    text-decoration: none;
     font-size: max(1.1vw, 19px);
     text-align: center;
 }
@@ -97,6 +94,7 @@ nav ul {
 }
 
 nav ul li {
+    list-style-type: none;
     margin: 1rem;
 }
 
@@ -104,6 +102,7 @@ nav ul a {
     display: inline-grid;
     padding: 0.5rem;
     font-size: 1.6rem;
+    text-decoration: none;
 }
 
 main {
@@ -112,7 +111,7 @@ main {
     justify-content: center;
     padding-top: 3vh;
     padding-bottom: 5vh;
-    font-size: 1.15rem;
+    font-size: 1.18rem;
 }
 
 article .container {
@@ -123,7 +122,7 @@ article .container {
 }
 
 #main h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 2;
     margin: 0.50rem;
     white-space: nowrap;
@@ -174,17 +173,85 @@ blockquote {
     justify-content: center;
     margin: 0;
     padding: 0;
-    list-style: nome;
 }
 
 #about ul li {
     display: inline-grid;
     padding: 0.5rem;
     font-size: 1.3rem;
+    /* color: #ffa372; */
 }
 
 #about section:nth-child(2) p:nth-child(3) {
     text-align: center;
     font-size: 1.5rem;
-    color: #ffa372;
+    color: #ed6663;
 } 
+
+main h3 {
+    color: #ed6663;
+    line-height: 1.4;
+    margin: 0;
+}
+
+#guidelines p { 
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.link-guidelines {
+    color: #ffa372;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#guidelines p:nth-of-type(1), #contribute p:nth-of-type(1) {
+    font-size: 1.4rem;
+}
+
+#contribute ol {
+    list-style-type: decimal;
+}
+
+#contribute li {
+    display: list-item;
+}
+
+#contribute h3 {
+    line-height: 1;
+    margin-bottom: 0.65em;
+    font-size: 1.7rem;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    line-height: 25px;
+}
+
+#files h3 {
+    display: none;
+}
+
+#files a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    background: #ed6663;
+    border: 3px solid #fff;
+    color: #fff;
+    padding: 15px;
+}
