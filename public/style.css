@@ -264,7 +264,7 @@ aside {
 }
 
 .profile .container {
-    background: #ffa372;
+    border: 3px solid #ffa372;
     color: #fff;
     padding: 10px;
     display: grid;
@@ -346,5 +346,26 @@ article .container, .page-footer .container, #styles .container {
     background: #ffa372;
     color: #fff;
     text-decoration: none;
-    border: 3px solid #ffa372;
+    border: 3px solid #fff;
+}
+
+.page-footer p:first-child {
+    margin-top: 3rem;
+    color: #ed6663;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.page-footer ul {
+    grid-template-columns: repeat(auto-fit, minmax(12ch, auto));
+}
+
+.page-footer ul a {
+    text-decoration: none;
+    font-size: max(1.1vw, 19px);
+    text-align: center;
+}
+
+.page-footer .container > :last-child {
+    margin-bottom: 0;
 }
