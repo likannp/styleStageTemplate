@@ -107,10 +107,13 @@ nav ul a {
     text-decoration: none;
 }
 
-main {
+main, .link-guidelines {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+main {
     padding-top: 3vh;
     padding-bottom: 5vh;
 }
@@ -179,9 +182,6 @@ main h3 {
 
 .link-guidelines {
     color: #ed6663;
-    display: flex;
-    text-align: center;
-    justify-content: center;
     text-decoration: none;
 }
 
