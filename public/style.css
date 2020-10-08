@@ -124,7 +124,7 @@ main {
     margin: 0.50rem;
 }
 
-#about p {
+#about p, #guidelines p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
