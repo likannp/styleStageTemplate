@@ -124,7 +124,7 @@ main {
     margin: 0.50rem;
 }
 
-#about p, #guidelines p {
+#about p, #guidelines p, ol {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -172,14 +172,6 @@ main h3 {
     margin: 0;
 }
 
-#guidelines p { 
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
 .link-guidelines {
     color: #ed6663;
     text-decoration: none;
@@ -204,12 +196,7 @@ main h3 {
 }
 
 ol {
-    display: block;
     list-style-type: decimal;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     padding-inline-start: 40px;
     line-height: 25px;
 }
