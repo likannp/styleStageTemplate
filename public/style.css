@@ -181,14 +181,6 @@ main h3 {
     font-weight: bolder;
 }
 
-#contribute ol {
-    list-style-type: decimal;
-}
-
-#contribute li {
-    display: list-item;
-}
-
 #contribute h3 {
     line-height: 1;
     margin-bottom: 0.65em;
