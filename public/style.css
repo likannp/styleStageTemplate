@@ -50,10 +50,6 @@ header {
     }
 }
 
-div {
-    display: block;
-}
-
 header h1 {
     display: inline-grid;
     font-size: max(4vw,70px);
