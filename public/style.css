@@ -151,7 +151,6 @@ blockquote {
     display: inline-grid;
     padding: 0.5rem;
     font-size: 1.4rem;
-    font-weight: lighter;
     color: #ffa372;
 }
 
@@ -169,6 +168,7 @@ main h3 {
 }
 
 .link-guidelines {
+    font-weight: bold;
     color: #ffa372;
     text-decoration: none;
 }
@@ -197,6 +197,7 @@ ol {
     text-align: center;
     text-decoration: none;
     background: #ffa372;
+    font-weight: bold;
     color: #fff;
     padding: 15px;
 }
@@ -279,6 +280,7 @@ article .container, .page-footer .container, #styles .container {
     place-content: center;
     min-height: 12rem;
     padding: 1rem;
+    font-weight: bold;
     color: #fff;
     text-align: center;
 }
