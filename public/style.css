@@ -14,6 +14,9 @@ body {
 .skip-link {
     position: absolute;
     z-index: -1000;
+}
+.skip-link:focus {
+    z-index: 10;
 } 
 
 a {
@@ -72,16 +75,20 @@ header h1 {
 
 header h2 {
     margin-top: 15px;
-    font-size: min(26px, 3.5vw);
 }
 
 header p {
-    font-size: min(24px, 3vw);
+    font-size: 20px;
 }
 
-a.link-github {
+header a.link-github {
+    max-width: 12rem;
+    margin: 0 auto;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    padding: 0.25em 1em;
     text-decoration: none;
-    font-size: max(1.1vw, 19px);
+    font-size: 20px;
     text-align: center;
 }
 
@@ -182,9 +189,10 @@ main h3 {
 }
 
 .link-guidelines {
+    /* text-decoration: none; */
     font-weight: bold;
+    text-align: center;
     color: #ffa372;
-    text-decoration: none;
 }
 
 #guidelines p:nth-of-type(1), #contribute p:nth-of-type(1) {
@@ -250,6 +258,10 @@ aside {
     margin: 0;
     padding: 3px;
     list-style: none;
+}
+
+.profile ul li {
+    margin-right: 15px;
 }
 
 #styles {
@@ -333,6 +345,21 @@ article .container, .page-footer .container, #styles .container {
     text-align: center;
 }
 
+.page-footer ul li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background: #ffa372;
+    color: #43658b;
+}
+
 .page-footer .container > :last-child {
     margin-bottom: 0;
+}
+
+a:hover {
+    text-decoration: underline !important;
 }
